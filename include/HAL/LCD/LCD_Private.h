@@ -1,0 +1,9 @@
+#ifndef LCD_Private_H_
+#define LCD_Private_H_
+
+
+#define FUNCTION_SET    CONC_BIT(0,0,1,1,NO_OF_LINES,FONT_SIZE,DONT_CARE,DONT_CARE)
+#define DISPLAY_ON      CONC_BIT(0,0,0,0,1,1,1,CURSOR_BLINK)
+#define DISPLAY_CLEAR   CONC_BIT(0,0,0,0,0,0,0,1)
+#define ENTRY_MODE      CONC_BIT(0,0,0,0,0,1,DISPLAY_DIRECTION,SHIFT)
+#endif /* LCD_Private_H_ */
